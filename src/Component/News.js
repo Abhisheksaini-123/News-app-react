@@ -26,7 +26,7 @@ this.setState({articles:parseData.articles})
     <h2>TOP HEADLINE</h2>
     <div className="row">
     {this.state.articles.map((element)=>{
-return  <div className="col-md-4"key = {element.url} >
+return  <div className="col-md-6"key = {element.url} >
 <Newsitem  title={element.title} description={element.description} imageurl={element.urlToImage} newsurl={element.url}/>
 </div>
 
